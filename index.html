@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>富隆金服数据报告</title>
+    <link rel="shortcut icon" href="//s1.music.126.net/style/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+    <style type="text/css">
+        .mui-dtpicker-title{
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="next-view"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="view index">
+                    <div class="logo-bg"></div>
+                    <div class="logo-name special"></div>
+                    <div class="logo-date">
+                        <p class="year_date special">2019</p>
+                        <p class="under_line">----</p>
+                        <p class="title special">可视化报告</p>
+                        <p class="company_name special">FULONG</p>
+                        <p class="company_slogan special">富隆金服，指引前途</p>
+                    </div>
+                    <div class="time_choose">
+                        <button data-options='{"type":"date"}' class="btn mui-btn mui-btn-block special" id="time_choose_ipt">截止时间</button>
+                        <button id="searchBtn">查看</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="view index">
+                    <div class="column_title">
+                        数据报告-->用户数量情况
+                    </div>
+                    <div class="column_data">
+                        <p>环比新增22位用户，涨幅13%</p>
+                        <span></span>
+                    </div>
+                    <div class="column_image">
+                        <div id="line_box" style="width:100%;height:100%"></div>
+                    </div>
+                     <div class="column_data">
+                        <p>同比增长400位用户</p>
+                        <span></span>
+                    </div>
+                    <div class="column_image">
+                        <div id="line_box_one" style="width:100%;height:100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="view index">
+                    <div class="column_title">
+                         数据报告-->股票持仓前十名
+                    </div>
+                    <div class="table_title">
+                        <ul class = 'ul_one'>
+                            <li style="flex-grow:1">
+                                <div class="triangle_left"></div>
+                            </li>
+                            <li style="flex-grow:2">用户</li>
+                            <li style="flex-grow:2">可用资金(万元)</li>
+                            <li style="flex-grow:2">持仓总市值(万元)</li>
+                        </ul>
+                    </div>
+                    <div class="list_table">
+                       <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span class="first_span"></span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="up_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="up_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span class="second_span"></span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span>一</span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span class="third_span"></span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000 <span>一</span></li>
+                            <li style="flex-grow:2">9000<span class="up_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span style="font-size:1.3rem;line-height:1">④</span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="down_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span style="font-size:1.3rem;line-height:1">⑤</span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="down_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span style="font-size:1.3rem;line-height:1">⑥</span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="down_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span style="font-size:1.3rem;line-height:1">⑦</span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="down_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span style="font-size:1.3rem;line-height:1">⑧</span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="down_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span style="font-size:1.3rem;line-height:1">⑨</span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="down_span"></span></li>
+                        </ul>
+                        <ul class = 'ul_two'>
+                            <li style="flex-grow:1">
+                                <span style="font-size:1.3rem;line-height:1">⑩</span>
+                            </li>
+                            <li style="flex-grow:2">马云</li>
+                            <li style="flex-grow:2">10000<span class="down_span"></span></li>
+                            <li style="flex-grow:2">9000<span class="down_span"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="view index">
+                    <div class="column_title">
+                         数据报告-->股票持仓前十名
+                    </div>
+                    <ul class="top_ten_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span class="percent_span"></span>
+                        </li>
+                        <li class="standard">650万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>630万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>600万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>550万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>520万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>500万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>400万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>350万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>250万股</li>
+                    </ul>
+                    <ul class="top_ten_stock list_stock">
+                        <li>格力电器</li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>150万股</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="view index">
+                     <div class="column_title">
+                         数据报告-->公司资产和资金变化
+                    </div>
+                    <div class="column_image" style="height:26rem;margin-top:0.8rem">
+                        <div id="line_box_two" style="width:100%;height:100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="view index">
+                    <div class="column_title">
+                        数据报告-->费用统计
+                    </div>
+                    <div class="cost_total">
+                        <p style="text-indent:20%">截止到2015年5月24日</p>
+                        <p style="text-indent:40%">共产生费用：100.00万元</p>
+                    </div>
+                    <div class="column_image" style="height:26rem;margin-top:0.8rem">
+                        <div id="line_box_three" style="width:100%;height:100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/mui.min.js"></script>
+  <script type="text/javascript" src="js/mui.picker.min.js"></script>
+  <script type="text/javascript" src="js/datetime.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+  <script>
+    const viewSpecial = $('.special');
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'vertical', // 垂直切换选项
+      on: {
+        slideChangeTransitionEnd: function () {
+          if (this.activeIndex === 0) {
+            viewSpecial.addClass('appear');
+
+          } else {
+             viewSpecial.removeClass('appear');
+          }
+        },
+      },
+    }); 
+    window.onload = function(){
+        $('.logo-name').addClass('appear');
+        $('.year_date').addClass('appear');
+        $('.title').addClass('appear');
+        $('.company_name').addClass('appear');
+        $('.company_slogan').addClass('appear');
+        $('#time_choose_ipt').addClass('appear');
+    }
+    /*第二屏的柱状图*/
+    var dom = document.getElementById('line_box');
+    var domone = document.getElementById('line_box_one');
+    var domtwo = document.getElementById('line_box_two');
+    var domthree = document.getElementById('line_box_three');
+    var chart_column = echarts.init(dom);
+    var chart_line = echarts.init(domone);
+    var chart_line_two = echarts.init(domtwo);
+    var chart_line_three = echarts.init(domthree);
+    var app = {};
+    option = null;
+    options = null;
+    app.title = '坐标轴刻度与标签对齐';
+    option = {
+    color: ['#ff564c'],
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '5%',
+        right: '5%',
+        bottom: '5%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            data : ['一月', '二月', '三月', '四月', '五月'],
+            axisLine: {
+                lineStyle: {
+                    color: "red",
+                    fontSize:'12px'
+                }
+            },
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLine: {
+                lineStyle: {
+                    color: "red",
+                    fontSize:'12px',
+                }
+            }
+        }
+    ],
+    series : [
+        {
+            name:'直接访问',
+            type:'bar',
+            barWidth: '30%',
+            data:[30, 52, 100, 134, 150],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                            color: 'red',
+                            fontSize: 12
+                        }
+                    }
+                }
+            },
+        }
+    ]
+};
+/*第二屏的折线图*/
+options = {
+    grid: {
+        left: '5%',
+        right: '5%',
+        bottom: '5%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'category',
+        data: ['2018年5月', '2019年5月'],
+        axisLine: {
+            lineStyle: {
+                color: "red",
+                fontSize:'12px'
+            }
+        },
+    },
+    yAxis: {
+        type: 'value',
+        axisLine: {
+            lineStyle: {
+                color: "red",
+                fontSize:'12px'
+            }
+        }
+    },
+    series: [{
+        data: [0, 150],
+        type: 'line',
+        symbol: 'square',
+        symbolSize: 10,
+        lineStyle: {
+            normal: {
+                color: 'red',
+                width: 2,
+                type: 'solid'
+            }
+        },
+        itemStyle: {
+            normal: {
+                borderWidth: 3,
+                borderColor: 'yellow',
+                color: 'red',
+                label:{
+                    show: true, //开启显示
+                    position: 'top', //在上方显示
+                }
+            }
+        }
+    }]
+};
+/*第五屏双折线图*/
+options_two = {
+    // title:{
+    //     text:'万元',
+    //     left:'20%',
+    //     top:'15%',
+    //     fontSize:'11px',
+    // },
+    legend: {
+        data:['交易用户资金总额','交易用户股票总市值'],
+        orient:'vertical'
+    },
+    grid: {
+        left: '2%',
+        right: '5%',
+        bottom: '5%',
+        containLabel: true
+    },
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data: ['一月','二月','三月','四月','五月'],
+        axisLine: {
+            lineStyle: {
+                color: "red",
+                fontSize:'12px'
+            }
+        },
+    },
+    yAxis: {
+        type: 'value',
+        axisLabel: {
+            formatter: '{value} 万元'
+        },
+        axisLine: {
+            lineStyle: {
+                color: "red",
+                fontSize:'12px'
+            }
+        },
+        splitLine:{
+            show:true,
+            lineStyle:{
+                type:'dashed'
+            }
+        }
+    },
+    series: [
+        {
+            name:'交易用户资金总额',
+            type:'line',
+            data:[2500, 1700, 1700, 1550, 2000],
+            symbol: 'circle',
+            symbolSize: 10,
+            color: 'green',
+            label: {
+                show: true, //开启显示
+                position: 'top', //在上方显示
+                textStyle: { //数值样式
+                    color: 'red',
+                    fontSize: 12
+                }
+            }
+        },
+        {
+            name:'交易用户股票总市值',
+            type:'line',
+            data:[1000, 1500, 1500, 1510, 2500],
+            symbol: 'circle',
+            symbolSize: 10,
+            color: 'red',
+            label: {
+                show: true, //开启显示
+                position: 'bottom', //在上方显示
+                textStyle: { //数值样式
+                    color: 'red',
+                    fontSize: 12
+                }
+            }
+        }
+    ]
+};
+/*最后一屏饼状图*/
+options_three = {
+    title : {
+    },
+    legend: {
+        orient:'horizontal',
+        left: 'center',
+        data: ['佣金','印花税','过户费','代扣费']
+    },
+    color:['red','green','yellow','orange'],
+    series : [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius : '55%',
+            center: ['50%', '40%'],
+            data:[
+                {value:50.00, name:'佣金'},
+                {value:20.00, name:'印花税'},
+                {value:10.00, name:'过户费'},
+                {value:20.00, name:'代扣费'}
+            ],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur:2,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                },
+                normal:{ 
+                    label:{ 
+                        show: true, 
+                        formatter: '{c}万元\n({d}%)' 
+                    }, 
+                    labelLine :{show:true} 
+                } 
+            }
+        }
+    ]
+};
+
+if (option && typeof option === "object") {
+    chart_column.setOption(option, true);
+}
+if (option && typeof option === "object") {
+    chart_line.setOption(options, true);
+}
+if (option && typeof option === "object") {
+    chart_line_two.setOption(options_two, true);
+}
+if (option && typeof option === "object") {
+    chart_line_three.setOption(options_three, true);
+}
+
+/*第四屏的股票排名*/
+function stock_order(){
+    var standard_data = parseFloat($('.standard').text());
+    var other_ul = $('.list_stock');
+    console.log(other_ul);
+    console.log(standard_data);
+    for(var i =0;i<other_ul.length;i++){
+        other_ul[i].children[1].children[0].style.width = (parseFloat(other_ul[i].children[2].innerText)/standard_data).toFixed(2)*100+'%'
+    }
+}
+stock_order();
+
+  </script>
+</body>
+
+</html>
